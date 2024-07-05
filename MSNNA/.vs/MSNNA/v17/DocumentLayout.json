@@ -1,0 +1,112 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\SecaniBack\\Microservicios\\MSNNA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A8AC63E0-45A5-425B-8852-71818F1E32C3}|MSNNA.Api\\MSNNA.Api.csproj|e:\\secaniback\\microservicios\\msnna\\msnna.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A8AC63E0-45A5-425B-8852-71818F1E32C3}|MSNNA.Api\\MSNNA.Api.csproj|solutionrelative:msnna.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D80C1FFC-16BA-4281-A6E1-9462DA318AC5}|MSNNA.Infra\\MSNNA.Infra.csproj|e:\\secaniback\\microservicios\\msnna\\msnna.infra\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D80C1FFC-16BA-4281-A6E1-9462DA318AC5}|MSNNA.Infra\\MSNNA.Infra.csproj|solutionrelative:msnna.infra\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8AC63E0-45A5-425B-8852-71818F1E32C3}|MSNNA.Api\\MSNNA.Api.csproj|e:\\secaniback\\microservicios\\msnna\\msnna.api\\extensions\\startupextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8AC63E0-45A5-425B-8852-71818F1E32C3}|MSNNA.Api\\MSNNA.Api.csproj|solutionrelative:msnna.api\\extensions\\startupextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8AC63E0-45A5-425B-8852-71818F1E32C3}|MSNNA.Api\\MSNNA.Api.csproj|e:\\secaniback\\microservicios\\msnna\\msnna.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8AC63E0-45A5-425B-8852-71818F1E32C3}|MSNNA.Api\\MSNNA.Api.csproj|solutionrelative:msnna.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\SecaniBack\\Microservicios\\MSNNA\\MSNNA.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "MSNNA.Api\\appsettings.json",
+              "ToolTip": "E:\\SecaniBack\\Microservicios\\MSNNA\\MSNNA.Api\\appsettings.json",
+              "RelativeToolTip": "MSNNA.Api\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-04T22:39:50.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\SecaniBack\\Microservicios\\MSNNA\\MSNNA.Infra\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "MSNNA.Infra\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\SecaniBack\\Microservicios\\MSNNA\\MSNNA.Infra\\ApplicationDbContext.cs",
+              "RelativeToolTip": "MSNNA.Infra\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T22:39:45.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StartupExtensions.cs",
+              "DocumentMoniker": "E:\\SecaniBack\\Microservicios\\MSNNA\\MSNNA.Api\\Extensions\\StartupExtensions.cs",
+              "RelativeDocumentMoniker": "MSNNA.Api\\Extensions\\StartupExtensions.cs",
+              "ToolTip": "E:\\SecaniBack\\Microservicios\\MSNNA\\MSNNA.Api\\Extensions\\StartupExtensions.cs",
+              "RelativeToolTip": "MSNNA.Api\\Extensions\\StartupExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T22:37:26.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\SecaniBack\\Microservicios\\MSNNA\\MSNNA.Api\\Program.cs",
+              "RelativeDocumentMoniker": "MSNNA.Api\\Program.cs",
+              "ToolTip": "E:\\SecaniBack\\Microservicios\\MSNNA\\MSNNA.Api\\Program.cs",
+              "RelativeToolTip": "MSNNA.Api\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T22:37:19.157Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
