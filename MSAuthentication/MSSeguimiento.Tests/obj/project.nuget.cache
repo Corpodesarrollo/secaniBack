@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H/ji0goxDvY=",
-  "success": true,
-  "projectFilePath": "D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSAuthentication.Tests\\MSAuthentication.Tests.csproj",
+  "dgSpecHash": "f9IQOkw1CvA=",
+  "success": false,
+  "projectFilePath": "D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSSeguimiento.Tests\\MSAuthentication.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\llanos1070\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\llanos1070\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
@@ -109,5 +109,24 @@
     "C:\\Users\\llanos1070\\.nuget\\packages\\xunit.extensibility.execution\\2.5.3\\xunit.extensibility.execution.2.5.3.nupkg.sha512",
     "C:\\Users\\llanos1070\\.nuget\\packages\\xunit.runner.visualstudio\\2.5.3\\xunit.runner.visualstudio.2.5.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "No se encuentra el proyecto \"D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSSeguimiento.Core\\MSSeguimiento.Core.csproj\". Compruebe que la referencia al proyecto sea válida y que exista el archivo de proyecto.",
+      "libraryId": "D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSSeguimiento.Core\\MSSeguimiento.Core.csproj",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "No se encuentra el proyecto \"D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSSeguimiento.Infra\\MSSeguimiento.Infra.csproj\". Compruebe que la referencia al proyecto sea válida y que exista el archivo de proyecto.",
+      "libraryId": "D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSSeguimiento.Infra\\MSSeguimiento.Infra.csproj",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

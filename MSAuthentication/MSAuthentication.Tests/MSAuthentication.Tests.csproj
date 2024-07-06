@@ -19,8 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MSSeguimiento.Core\MSSeguimiento.Core.csproj" />
-    <ProjectReference Include="..\MSSeguimiento.Infra\MSSeguimiento.Infra.csproj" />
+    <ProjectReference Include="..\MSAuthentication.Core\MSAuthentication.Core.csproj" />
+    <ProjectReference Include="..\MSAuthentication.Infra\MSAuthentication.Infra.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34407.89
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSAuthentication.Tests", "Authentication.Tests\MSAuthentication.Tests.csproj", "{69EF90BE-014F-4F79-88DF-F29BA8F31CF7}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSAuthentication.Core", "MSAuthentication.Core\MSAuthentication.Core.csproj", "{964F5DB7-DA38-48FE-89BE-5DDD52F4232A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSAuthentication.Infra", "MSAuthentication.Infra\MSAuthentication.Infra.csproj", "{8C28D0F8-3EF8-44A3-B87C-6517865FFAE6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSAuthentication.Api", "MSAuthentication.Api\MSAuthentication.Api.csproj", "{B903F959-AF2F-4BB4-BD4E-AF012505A3A9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSAuthentication.Tests", "MSAuthentication.Tests\MSAuthentication.Tests.csproj", "{F5383566-429A-4620-806E-BBEECA6F73D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{69EF90BE-014F-4F79-88DF-F29BA8F31CF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{69EF90BE-014F-4F79-88DF-F29BA8F31CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{69EF90BE-014F-4F79-88DF-F29BA8F31CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{69EF90BE-014F-4F79-88DF-F29BA8F31CF7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{964F5DB7-DA38-48FE-89BE-5DDD52F4232A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{964F5DB7-DA38-48FE-89BE-5DDD52F4232A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{964F5DB7-DA38-48FE-89BE-5DDD52F4232A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{B903F959-AF2F-4BB4-BD4E-AF012505A3A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B903F959-AF2F-4BB4-BD4E-AF012505A3A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B903F959-AF2F-4BB4-BD4E-AF012505A3A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5383566-429A-4620-806E-BBEECA6F73D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5383566-429A-4620-806E-BBEECA6F73D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5383566-429A-4620-806E-BBEECA6F73D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5383566-429A-4620-806E-BBEECA6F73D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

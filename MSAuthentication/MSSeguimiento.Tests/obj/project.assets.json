@@ -1979,30 +1979,6 @@
         "build": {
           "build/net6.0/xunit.runner.visualstudio.props": {}
         }
-      },
-      "MSAuthentication.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/MSAuthentication.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MSAuthentication.Core.dll": {}
-        }
-      },
-      "MSAuthentication.Infra/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "MSAuthentication.Core": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "8.0.0"
-        },
-        "compile": {
-          "bin/placeholder/MSAuthentication.Infra.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MSAuthentication.Infra.dll": {}
-        }
       }
     }
   },
@@ -6232,22 +6208,12 @@
         "xunit.runner.visualstudio.2.5.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
-    },
-    "MSAuthentication.Core/1.0.0": {
-      "type": "project",
-      "path": "../MSAuthentication.Core/MSAuthentication.Core.csproj",
-      "msbuildProject": "../MSAuthentication.Core/MSAuthentication.Core.csproj"
-    },
-    "MSAuthentication.Infra/1.0.0": {
-      "type": "project",
-      "path": "../MSAuthentication.Infra/MSAuthentication.Infra.csproj",
-      "msbuildProject": "../MSAuthentication.Infra/MSAuthentication.Infra.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "MSAuthentication.Core >= 1.0.0",
-      "MSAuthentication.Infra >= 1.0.0",
+      "D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSSeguimiento.Core\\MSSeguimiento.Core.csproj",
+      "D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSSeguimiento.Infra\\MSSeguimiento.Infra.csproj",
       "Microsoft.EntityFrameworkCore.InMemory >= 8.0.6",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
       "NSubstitute >= 5.1.0",
@@ -6263,11 +6229,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSAuthentication.Tests\\MSAuthentication.Tests.csproj",
+      "projectUniqueName": "D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSSeguimiento.Tests\\MSAuthentication.Tests.csproj",
       "projectName": "MSAuthentication.Tests",
-      "projectPath": "D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSAuthentication.Tests\\MSAuthentication.Tests.csproj",
+      "projectPath": "D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSSeguimiento.Tests\\MSAuthentication.Tests.csproj",
       "packagesPath": "C:\\Users\\llanos1070\\.nuget\\packages\\",
-      "outputPath": "D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSAuthentication.Tests\\obj\\",
+      "outputPath": "D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSSeguimiento.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6289,11 +6255,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSAuthentication.Core\\MSAuthentication.Core.csproj": {
-              "projectPath": "D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSAuthentication.Core\\MSAuthentication.Core.csproj"
+            "D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSSeguimiento.Core\\MSSeguimiento.Core.csproj": {
+              "projectPath": "D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSSeguimiento.Core\\MSSeguimiento.Core.csproj"
             },
-            "D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSAuthentication.Infra\\MSAuthentication.Infra.csproj": {
-              "projectPath": "D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSAuthentication.Infra\\MSAuthentication.Infra.csproj"
+            "D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSSeguimiento.Infra\\MSSeguimiento.Infra.csproj": {
+              "projectPath": "D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSSeguimiento.Infra\\MSSeguimiento.Infra.csproj"
             }
           }
         }
@@ -6357,5 +6323,25 @@
         "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "No se encuentra el proyecto \"D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSSeguimiento.Core\\MSSeguimiento.Core.csproj\". Compruebe que la referencia al proyecto sea válida y que exista el archivo de proyecto.",
+      "libraryId": "D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSSeguimiento.Core\\MSSeguimiento.Core.csproj",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "No se encuentra el proyecto \"D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSSeguimiento.Infra\\MSSeguimiento.Infra.csproj\". Compruebe que la referencia al proyecto sea válida y que exista el archivo de proyecto.",
+      "libraryId": "D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSSeguimiento.Infra\\MSSeguimiento.Infra.csproj",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
