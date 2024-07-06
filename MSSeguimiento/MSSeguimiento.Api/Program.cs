@@ -1,4 +1,6 @@
 using MSSeguimiento.Api.Extensions;
+using MSSeguimiento.Core.Interfaces.Repositorios;
+using MSSeguimiento.Infra.Repositorios;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +12,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.CustomConfigureServices();
+
+builder.Services.AddScoped<INotificacionRepo, NotificacionRepo>();
 
 var app = builder.Build();
 

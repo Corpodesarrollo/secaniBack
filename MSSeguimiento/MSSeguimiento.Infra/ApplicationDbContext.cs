@@ -21,5 +21,7 @@ namespace MSSeguimiento.Infra
         public DbSet<Notificacion> Notificacions { get; set; }
          public DbSet<Seguimiento> Seguimientos { get; set; }
         public DbSet<UsuarioAsignado> UsuarioAsignados { get; set; }
+        public DbSet<NotificacionesUsuario> NotificacionesUsuarios { get; set; }
+        public DbSet<AspNetUsers> AspNetUsers { get; set; }
     }
 }
