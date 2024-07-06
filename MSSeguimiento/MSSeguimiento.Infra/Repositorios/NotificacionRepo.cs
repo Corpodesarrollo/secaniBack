@@ -22,13 +22,13 @@ namespace MSSeguimiento.Infra.Repositorios
         {
             List<GetNotificacionResponse> response = (from un in _context.NotificacionesUsuarios
                                                       join uDestino in _context.AspNetUsers on un.AgenteDestinoId equals uDestino.Id
-                                                      join uOrigen in _context.AspNetUsers on un.AgenteDestinoId equals uOrigen.Id
+                                                      join uOrigen in _context.AspNetUsers on un.AgenteOrigenId equals uOrigen.Id
                                                       where un.AgenteDestinoId == AgenteDestinoId && !un.IsDeleted
-                                                            select new GetNotificacionResponse()
-                                                            {
-                                                                TextoNotificacion = string.Join("","El Agente de seguimiento ",uOrigen.FullName,
-                                                                " le ha asignado el caso No. ",un.SeguimientoId)
-                                                            }).ToList();
+                                                      select new GetNotificacionResponse()
+                                                      {
+                                                          TextoNotificacion = string.Join("", "El Agente de seguimiento ", uOrigen.FullName ?? string.Empty,
+                                                          " le ha asignado el caso No. ", un.SeguimientoId.ToString() ?? "N/A")
+                                                      }).ToList();
 
             return response;
         }
