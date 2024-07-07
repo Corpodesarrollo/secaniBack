@@ -13,7 +13,7 @@ builder.Services.AddSwaggerGen();
 
 builder.CustomConfigureServices();
 
-builder.Services.AddScoped<INotificacionRepo, NotificacionRepo>();
+builder.Services.AddScoped<IPermisosRepo, PermisosRepo>();
 
 var app = builder.Build();
 

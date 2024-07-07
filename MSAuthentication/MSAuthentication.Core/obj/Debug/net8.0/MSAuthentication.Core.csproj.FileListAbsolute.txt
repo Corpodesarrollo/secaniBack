@@ -10,3 +10,4 @@ D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAu
 D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\MSAuthentication.Core\obj\Debug\net8.0\refint\MSAuthentication.Core.dll
 D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\MSAuthentication.Core\obj\Debug\net8.0\MSAuthentication.Core.pdb
 D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\MSAuthentication.Core\obj\Debug\net8.0\ref\MSAuthentication.Core.dll
+D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\MSAuthentication.Core\obj\Debug\net8.0\MSAuthentication.Core.csproj.AssemblyReference.cache

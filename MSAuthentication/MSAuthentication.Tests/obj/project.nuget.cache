@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "H/ji0goxDvY=",
+  "dgSpecHash": "UykNpgQzMtA=",
   "success": true,
   "projectFilePath": "D:\\documentos\\empresas\\Pluralsoft Technologies\\SECANI\\Workspaces\\secaniBack\\MSAuthentication\\MSAuthentication.Tests\\MSAuthentication.Tests.csproj",
   "expectedPackageFiles": [
@@ -11,8 +11,10 @@
     "C:\\Users\\llanos1070\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.6\\microsoft.entityframeworkcore.abstractions.8.0.6.nupkg.sha512",
     "C:\\Users\\llanos1070\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.6\\microsoft.entityframeworkcore.analyzers.8.0.6.nupkg.sha512",
     "C:\\Users\\llanos1070\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\8.0.6\\microsoft.entityframeworkcore.inmemory.8.0.6.nupkg.sha512",
+    "C:\\Users\\llanos1070\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.0\\microsoft.entityframeworkcore.relational.8.0.0.nupkg.sha512",
     "C:\\Users\\llanos1070\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\llanos1070\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
+    "C:\\Users\\llanos1070\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\llanos1070\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\llanos1070\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\llanos1070\\.nuget\\packages\\microsoft.extensions.logging\\8.0.0\\microsoft.extensions.logging.8.0.0.nupkg.sha512",
@@ -104,10 +106,21 @@
     "C:\\Users\\llanos1070\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
     "C:\\Users\\llanos1070\\.nuget\\packages\\xunit.analyzers\\1.4.0\\xunit.analyzers.1.4.0.nupkg.sha512",
     "C:\\Users\\llanos1070\\.nuget\\packages\\xunit.assert\\2.5.3\\xunit.assert.2.5.3.nupkg.sha512",
-    "C:\\Users\\llanos1070\\.nuget\\packages\\xunit.core\\2.5.3\\xunit.core.2.5.3.nupkg.sha512",
-    "C:\\Users\\llanos1070\\.nuget\\packages\\xunit.extensibility.core\\2.5.3\\xunit.extensibility.core.2.5.3.nupkg.sha512",
-    "C:\\Users\\llanos1070\\.nuget\\packages\\xunit.extensibility.execution\\2.5.3\\xunit.extensibility.execution.2.5.3.nupkg.sha512",
+    "C:\\Users\\llanos1070\\.nuget\\packages\\xunit.core\\2.8.1\\xunit.core.2.8.1.nupkg.sha512",
+    "C:\\Users\\llanos1070\\.nuget\\packages\\xunit.extensibility.core\\2.8.1\\xunit.extensibility.core.2.8.1.nupkg.sha512",
+    "C:\\Users\\llanos1070\\.nuget\\packages\\xunit.extensibility.execution\\2.8.1\\xunit.extensibility.execution.2.8.1.nupkg.sha512",
     "C:\\Users\\llanos1070\\.nuget\\packages\\xunit.runner.visualstudio\\2.5.3\\xunit.runner.visualstudio.2.5.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Se detectó una versión del paquete fuera de la restricción de dependencia: xunit 2.5.3 requiere xunit.core (= 2.5.3), pero la versión xunit.core 2.8.1 ya se resolvió.",
+      "libraryId": "xunit.core",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

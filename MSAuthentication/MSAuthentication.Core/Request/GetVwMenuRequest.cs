@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace MSAuthentication.Core.request
 {
-    public class GetNotificacionRequest
+    public class GetVwMenuRequest
     {
-        public string AgenteDestinoId { get; set; }
+        public string RolId { get; set; }
     }
 }

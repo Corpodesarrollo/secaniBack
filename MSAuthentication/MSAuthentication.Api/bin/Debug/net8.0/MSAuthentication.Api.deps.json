@@ -10,6 +10,7 @@
         "dependencies": {
           "MSAuthentication.Core": "1.0.0",
           "MSAuthentication.Infra": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
@@ -546,6 +547,9 @@
         }
       },
       "MSAuthentication.Core/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.0"
+        },
         "runtime": {
           "MSAuthentication.Core.dll": {}
         }
@@ -553,7 +557,8 @@
       "MSAuthentication.Infra/1.0.0": {
         "dependencies": {
           "MSAuthentication.Core": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "8.0.0"
+          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.0"
         },
         "runtime": {
           "MSAuthentication.Infra.dll": {}

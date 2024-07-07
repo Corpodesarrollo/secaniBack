@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MSAuthentication.Core.Modelos;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Emit;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace MSAuthentication.Infra
 {
@@ -16,12 +11,19 @@ namespace MSAuthentication.Infra
         {
         }
 
-        public DbSet<Alerta> Alertas { get; set; }
-        public DbSet<AlertaSeguimiento> AlertaSeguimientos { get; set; }
-        public DbSet<Notificacion> Notificacions { get; set; }
-         public DbSet<Seguimiento> Seguimientos { get; set; }
-        public DbSet<UsuarioAsignado> UsuarioAsignados { get; set; }
-        public DbSet<NotificacionesUsuario> NotificacionesUsuarios { get; set; }
-        public DbSet<AspNetUsers> AspNetUsers { get; set; }
+        public DbSet<VwMenuModel> VwMenu { get; set; }
+
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            // Configurar la vista VwMenu como una entidad sin clave
+            modelBuilder.Entity<VwMenuModel>(eb =>
+            {
+                eb.HasNoKey();
+                eb.ToView("VwMenu"); // Esto es válido para versiones recientes de EF Core
+            });
+        }
     }
 }
