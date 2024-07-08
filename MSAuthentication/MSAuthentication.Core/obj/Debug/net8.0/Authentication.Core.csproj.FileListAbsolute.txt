@@ -1,0 +1,12 @@
+D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\Authentication.Core\bin\Debug\net8.0\Authentication.Core.deps.json
+D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\Authentication.Core\bin\Debug\net8.0\Authentication.Core.dll
+D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\Authentication.Core\bin\Debug\net8.0\Authentication.Core.pdb
+D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\Authentication.Core\obj\Debug\net8.0\Authentication.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\Authentication.Core\obj\Debug\net8.0\Authentication.Core.AssemblyInfoInputs.cache
+D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\Authentication.Core\obj\Debug\net8.0\Authentication.Core.AssemblyInfo.cs
+D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\Authentication.Core\obj\Debug\net8.0\Authentication.Core.csproj.CoreCompileInputs.cache
+D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\Authentication.Core\obj\Debug\net8.0\Authentication.Core.sourcelink.json
+D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\Authentication.Core\obj\Debug\net8.0\Authentication.Core.dll
+D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\Authentication.Core\obj\Debug\net8.0\refint\Authentication.Core.dll
+D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\Authentication.Core\obj\Debug\net8.0\Authentication.Core.pdb
+D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\Authentication.Core\obj\Debug\net8.0\ref\Authentication.Core.dll

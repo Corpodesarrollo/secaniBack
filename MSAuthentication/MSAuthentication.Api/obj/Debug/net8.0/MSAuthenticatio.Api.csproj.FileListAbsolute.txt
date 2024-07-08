@@ -1,0 +1,8 @@
+D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\MSAuthentication.Api\obj\Debug\net8.0\MSAuthenticatio.Api.csproj.AssemblyReference.cache
+D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\MSAuthentication.Api\obj\Debug\net8.0\MSAuthenticatio.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\MSAuthentication.Api\obj\Debug\net8.0\MSAuthenticatio.Api.AssemblyInfoInputs.cache
+D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\MSAuthentication.Api\obj\Debug\net8.0\MSAuthenticatio.Api.AssemblyInfo.cs
+D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\MSAuthentication.Api\obj\Debug\net8.0\MSAuthenticatio.Api.csproj.CoreCompileInputs.cache
+D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\MSAuthentication.Api\obj\Debug\net8.0\MSAuthenticatio.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\MSAuthentication.Api\obj\Debug\net8.0\MSAuthenticatio.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\documentos\empresas\Pluralsoft Technologies\SECANI\Workspaces\secaniBack\MSAuthentication\MSAuthentication.Api\obj\Debug\net8.0\MSAuthenticatio.Api.sourcelink.json
