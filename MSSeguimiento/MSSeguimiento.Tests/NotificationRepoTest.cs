@@ -11,8 +11,8 @@ namespace MSSeguimiento.Tests
 {
     public class NotificationRepoTest
     {
-        private NotificacionRepo notificacionRepo;
-        private readonly ApplicationDbContext context;
+        private NotificacionRepo NotificacionRepo;
+        private readonly ApplicationDbContext Context;
 
         public NotificationRepoTest()
         {
@@ -20,17 +20,17 @@ namespace MSSeguimiento.Tests
             .UseInMemoryDatabase(databaseName: "Test")
             .Options;
 
-            context = new ApplicationDbContext(options);
-            notificacionRepo = new NotificacionRepo(context);
+            Context = new ApplicationDbContext(options);
+            NotificacionRepo = new NotificacionRepo(Context);
         } 
 
         [Fact]
         public void GetNotificacionUsuario_ReturnLista()
         {
             // Inicializar datos de prueba
-            context.AspNetUsers.Add(new AspNetUsers { Id = "prueba1", FullName = "Giovanny Romero", Telefonos = "" });
+            Context.AspNetUsers.Add(new AspNetUsers { Id = "prueba1", FullName = "Giovanny Romero", Telefonos = "" });
 
-            context.NotificacionesUsuarios.Add(new NotificacionesUsuario
+            Context.NotificacionesUsuarios.Add(new NotificacionesUsuario
             {
                 AgenteDestinoId = "prueba1",
                 AgenteOrigenId = "prueba1",
@@ -40,8 +40,8 @@ namespace MSSeguimiento.Tests
                 CreatedByUserId = "giovanny.romero"
             });
 
-            context.SaveChanges();
-            List<GetNotificacionResponse> response = notificacionRepo.GetNotificacionUsuario("prueba1");
+            Context.SaveChanges();
+            List<GetNotificacionResponse> response = NotificacionRepo.GetNotificacionUsuario("prueba1");
 
             Assert.NotNull(response);
             Assert.Equal(1, response.Count());
@@ -50,9 +50,9 @@ namespace MSSeguimiento.Tests
         [Fact]
         public void GetNumeroNotificacionUsuario_ReturnUno()
         {
-            context.AspNetUsers.Add(new AspNetUsers { Id = "prueba2", FullName = "Giovanny Romero", Telefonos = "" });
+            Context.AspNetUsers.Add(new AspNetUsers { Id = "prueba2", FullName = "Giovanny Romero", Telefonos = "" });
 
-            context.NotificacionesUsuarios.Add(new NotificacionesUsuario
+            Context.NotificacionesUsuarios.Add(new NotificacionesUsuario
             {
                 AgenteDestinoId = "prueba2",
                 AgenteOrigenId = "prueba2",
@@ -62,8 +62,8 @@ namespace MSSeguimiento.Tests
                 CreatedByUserId = "giovanny.romero"
             });
 
-            context.SaveChanges();
-            int response = notificacionRepo.GetNumeroNotificacionUsuario("prueba2");
+            Context.SaveChanges();
+            int response = NotificacionRepo.GetNumeroNotificacionUsuario("prueba2");
             Console.WriteLine("la cantidad de notificaciones es ="+response);
             Assert.Equal(1, response);
         }

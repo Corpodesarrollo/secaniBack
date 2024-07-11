@@ -14,6 +14,7 @@ builder.Services.AddSwaggerGen();
 builder.CustomConfigureServices();
 
 builder.Services.AddScoped<INotificacionRepo, NotificacionRepo>();
+builder.Services.AddScoped<IAlertaRepo, AlertaRepo>();
 
 var app = builder.Build();
 
