@@ -31,10 +31,16 @@ namespace MSSeguimiento.Api.Controllers
             return alertaRepo.GestionarAlerta(request);
         }
 
-        [HttpPost("ConsultarAlertas")]
-        public List<AlertaSeguimiento> ConsultarAlerta(ConsultarAlertasRequest request)
+        [HttpPost("ConsultarAlertasSeguimiento")]
+        public List<AlertaSeguimiento> ConsultarAlertaSeguimiento(ConsultarAlertasRequest request)
         {
             return alertaRepo.ConsultarAlertaSeguimiento(request);
+        }
+
+        [HttpPost("ConsultarAlertasEstados")]
+        public List<AlertaSeguimiento> ConsultarAlertaEstados(ConsultarAlertasEstadosRequest request)
+        {
+            return alertaRepo.ConsultarAlertaEstados(request);
         }
     }
 }
