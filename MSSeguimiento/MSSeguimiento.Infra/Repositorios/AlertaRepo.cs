@@ -118,5 +118,14 @@ namespace MSSeguimiento.Infra.Repositorios
 
             return response;
         }
+
+        public List<AlertaSeguimiento> ConsultarAlertaEstados(ConsultarAlertasEstadosRequest request)
+        {
+            List<AlertaSeguimiento> alertasSeguimiento = _context.AlertaSeguimientos
+                              .Where(u => request.estados.Contains(u.EstadoId))
+                              .ToList();
+
+            return alertasSeguimiento;
+        }
     }
 }
