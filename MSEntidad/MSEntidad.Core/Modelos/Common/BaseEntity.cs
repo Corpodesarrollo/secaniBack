@@ -10,11 +10,11 @@ namespace MSEntidad.Core.Modelos.Common
     {
         public long Id { get; set; }
         public DateTime DateCreated { get; set; } = DateTime.Now;
-        public DateTime DateUpdated { get; set; } = DateTime.Now;
-        public DateTime DateDeleted { get; set; } = DateTime.Now;
-        public long CreatedByUserId { get; set; } = 0;
-        public long UpdatedByUserId { get; set; } = 0;
-        public long DeletedByUserId { get; set; } = 0;
+        public DateTime DateUpdated { get; set; }
+        public DateTime DateDeleted { get; set; }
+        public string? CreatedByUserId { get; set; }
+        public string? UpdatedByUserId { get; set; } 
+        public string? DeletedByUserId { get; set; } 
         public bool IsDeleted { get; set; }
     }
 }
