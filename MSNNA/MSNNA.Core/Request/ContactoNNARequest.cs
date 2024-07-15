@@ -1,8 +1,12 @@
-﻿using MSNNA.Core.Modelos.Common;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace MSNNA.Core.Modelos
+namespace MSNNA.Core.Request
 {
-    public class ContactoNNA : BaseEntity
+    public class ContactoNNARequest
     {
         public long NNAId { get; set; }
         public string Nombres { get; set; }

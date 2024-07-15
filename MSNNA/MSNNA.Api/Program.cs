@@ -1,4 +1,6 @@
 using MSNNA.Api.Extensions;
+using MSNNA.Core.Interfaces.Repositorios;
+using MSNNA.Infra.Repositorios;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +12,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.CustomConfigureServices();
+
+//Registro de Repos
+builder.Services.AddScoped<INNARepo, NNARepo>();
 
 var app = builder.Build();
 

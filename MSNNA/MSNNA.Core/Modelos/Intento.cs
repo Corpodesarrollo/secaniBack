@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MSNNA.Core.Modelos.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MSNNA.Core.Modelos
 {
-    public class Intento
+    public class Intento : BaseEntity
     {
         public long ContactoNNAId { get; set; }
         public string Email { get; set; }

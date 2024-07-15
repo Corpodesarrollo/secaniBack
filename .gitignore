@@ -65,6 +65,7 @@
 /MSSeguimiento/MSSeguimiento.Infra/obj/Debug/net8.0/MSSeguimiento.Infra.AssemblyInfoInputs.cache
 /MSSeguimiento/MSSeguimiento.Infra/obj/Debug/net8.0/MSSeguimiento.Infra.csproj.AssemblyReference.cache
 /MSSeguimiento/MSSeguimiento.Infra/obj/Debug/net8.0/MSSeguimiento.Infra.GeneratedMSBuildEditorConfig.editorconfig
+<<<<<<< HEAD
 /MSSeguimiento/.vs
 /MSSeguimiento/MSSeguimiento.Api/obj
 /MSSeguimiento/.vs/MSSeguimiento 
@@ -154,3 +155,8 @@
 /MSSeguimiento/MSSeguimiento.Tests/obj/project.nuget.cache
 /MSSeguimiento/.vs/ProjectEvaluation/msseguimiento.metadata.v7.bin
 /MSSeguimiento/.vs/ProjectEvaluation/msseguimiento.projects.v7.bin
+=======
+
+ 
+/MSNNA/.vs/MSNNA
+>>>>>>> origin/main
