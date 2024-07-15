@@ -1,5 +1,6 @@
 ﻿using MSSeguimiento.Core.Interfaces.Repositorios;
 using MSSeguimiento.Core.Modelos;
+using MSSeguimiento.Core.Request;
 using MSSeguimiento.Core.response;
 using System;
 using System.Collections.Generic;
@@ -47,5 +48,56 @@ namespace MSSeguimiento.Infra.Repositorios
 
             return response.Count;
         }
+
+        public string GenerarOficioNotificacion(OficioNotificacionRequest request)
+        {
+            NotificacionEntidad? notificacionEntidad = (from ne in _context.NotificacionesEntidad
+                                                       where ne.Id == request.Id
+                                                       select ne).FirstOrDefault();
+
+            Entidad? entidad = (from ent in _context.Entidades
+                               where ent.Id == request.IdEntidad
+                               select ent).FirstOrDefault();
+
+            AlertaSeguimiento? alerta = (from als in _context.AlertaSeguimientos
+                                        where als.Id == request.IdAlertaSeguimiento
+                                        select als).FirstOrDefault();
+
+            NNA? nna = (from Tnna in _context.NNAs
+                        where Tnna.Id == request.IdNNA
+                        select Tnna).FirstOrDefault();
+
+
+            if (entidad == null) {
+                return "La entidad no existe";
+            }
+
+            if (alerta == null) {
+                return "La alerta no existe";
+            }
+            
+            if(notificacionEntidad == null)
+            {
+                notificacionEntidad = new NotificacionEntidad();
+            }
+
+            notificacionEntidad.EntidadId = request.IdEntidad;
+            notificacionEntidad.Entidad = entidad;
+            notificacionEntidad.Ciudad = request.Ciudad;
+            notificacionEntidad.AlertaSeguimiento = alerta;
+            notificacionEntidad.Asunto = request.Asunto;
+            notificacionEntidad.Cierre = request.Cierre;
+            notificacionEntidad.CiudadEnvio = request.CiudadEnvio;
+            notificacionEntidad.FechaEnvio = request.FechaEnvio;
+            notificacionEntidad.Membrete = request.Membrete;
+            notificacionEntidad.Ciudad = request.Ciudad;
+            notificacionEntidad.Mensaje = request.Mensaje;
+            notificacionEntidad.Comentario = request.Comentario;
+            notificacionEntidad.NNA = nna;
+            notificacionEntidad.Firmajpg = request.FirmaJpg;
+
+            return "Oficio creado correctamente";
+        }
+
     }
 }
