@@ -48,6 +48,7 @@ namespace MSNNA.Api.Controllers
         [HttpGet("ContactoNNAGetById/{id}")]
         public RespuestaResponse<ContactoNNA> ContactoNNAGetById(long id)
         {
+
             var response = _nNARepo.ObtenerContactoPorId(id);
             return response;
         }
