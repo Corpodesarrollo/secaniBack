@@ -23,5 +23,8 @@ namespace MSSeguimiento.Infra
         public DbSet<UsuarioAsignado> UsuarioAsignados { get; set; }
         public DbSet<NotificacionesUsuario> NotificacionesUsuarios { get; set; }
         public DbSet<AspNetUsers> AspNetUsers { get; set; }
+        public DbSet<NotificacionEntidad> NotificacionesEntidad { get; set; }
+        public DbSet<Entidad> Entidades { get; set; }
+        public DbSet<NNA> NNAs { get; set; }
     }
 }

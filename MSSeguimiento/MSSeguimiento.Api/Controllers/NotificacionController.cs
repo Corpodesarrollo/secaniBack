@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MSSeguimiento.Core.Interfaces.Repositorios;
 using MSSeguimiento.Core.request;
+using MSSeguimiento.Core.Request;
 using MSSeguimiento.Core.response;
 
 namespace MSSeguimiento.Api.Controllers
@@ -29,6 +30,12 @@ namespace MSSeguimiento.Api.Controllers
         public int GetNumeroNotifications(GetNotificacionRequest request)
         {
             return notificacionRepo.GetNumeroNotificacionUsuario(request.AgenteDestinoId);
+        }
+
+        [HttpPost("OficioNotificacion")]
+        public string GenerarOficioNotificacion(OficioNotificacionRequest request)
+        {
+            return notificacionRepo.GenerarOficioNotificacion(request);
         }
     }
 }
