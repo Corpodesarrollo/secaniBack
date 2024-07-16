@@ -22,5 +22,6 @@ namespace MSSeguimiento.Core.Request
         public string Cierre { get; set; }
         public string Firma { get; set; }
         public string FirmaJpg { get; set; }
+        public string UserName { get; set; }    
     }
 }

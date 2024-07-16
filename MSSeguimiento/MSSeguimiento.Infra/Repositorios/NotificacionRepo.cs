@@ -52,20 +52,28 @@ namespace MSSeguimiento.Infra.Repositorios
         public string GenerarOficioNotificacion(OficioNotificacionRequest request)
         {
             NotificacionEntidad? notificacionEntidad = (from ne in _context.NotificacionesEntidad
-                                                       where ne.Id == request.Id
-                                                       select ne).FirstOrDefault();
+                                                        where ne.Id == request.Id
+                                                        select ne).FirstOrDefault();
 
             Entidad? entidad = (from ent in _context.Entidades
-                               where ent.Id == request.IdEntidad
-                               select ent).FirstOrDefault();
+                                where ent.Id == request.IdEntidad
+                                select ent).FirstOrDefault();
 
             AlertaSeguimiento? alerta = (from als in _context.AlertaSeguimientos
-                                        where als.Id == request.IdAlertaSeguimiento
-                                        select als).FirstOrDefault();
+                                         where als.Id == request.IdAlertaSeguimiento
+                                         select als).FirstOrDefault();
 
             NNA? nna = (from Tnna in _context.NNAs
                         where Tnna.Id == request.IdNNA
                         select Tnna).FirstOrDefault();
+
+            AspNetUsers? user = (from us in _context.AspNetUsers
+                                 where us.UserName == request.UserName
+                                 select us).FirstOrDefault();
+
+            if (user == null) {
+                return "El usuario no existe";
+            }
 
 
             if (entidad == null) {
@@ -75,8 +83,13 @@ namespace MSSeguimiento.Infra.Repositorios
             if (alerta == null) {
                 return "La alerta no existe";
             }
-            
-            if(notificacionEntidad == null)
+
+            if (nna == null)
+            {
+                return "el NNA no existe";
+            }
+
+            if (notificacionEntidad == null)
             {
                 notificacionEntidad = new NotificacionEntidad();
             }
@@ -94,7 +107,23 @@ namespace MSSeguimiento.Infra.Repositorios
             notificacionEntidad.Mensaje = request.Mensaje;
             notificacionEntidad.Comentario = request.Comentario;
             notificacionEntidad.NNA = nna;
+            notificacionEntidad.NNAId = nna.Id;
             notificacionEntidad.Firmajpg = request.FirmaJpg;
+
+            if (notificacionEntidad.Id == 0)
+            {
+                notificacionEntidad.CreatedByUserId = user.Id;
+                notificacionEntidad.DateCreated = DateTime.Now;
+            }
+            else
+            {
+                notificacionEntidad.UpdatedByUserId = user.Id;
+                notificacionEntidad.DateUpdated = DateTime.Now;
+            }
+
+            _context.NotificacionesEntidad.Add(notificacionEntidad);
+            _context.SaveChanges();
+
 
             return "Oficio creado correctamente";
         }
