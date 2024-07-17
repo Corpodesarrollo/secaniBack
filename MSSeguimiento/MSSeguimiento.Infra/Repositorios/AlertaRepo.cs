@@ -2,6 +2,7 @@
 using MSSeguimiento.Core.Modelos;
 using MSSeguimiento.Core.Request;
 using MSSeguimiento.Core.response;
+using MSSeguimiento.Core.Response;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -119,11 +120,36 @@ namespace MSSeguimiento.Infra.Repositorios
             return response;
         }
 
-        public List<AlertaSeguimiento> ConsultarAlertaEstados(ConsultarAlertasEstadosRequest request)
+        public List<ConsultarAlertaEstadoResponse> ConsultarAlertaEstados(ConsultarAlertasEstadosRequest request)
         {
-            List<AlertaSeguimiento> alertasSeguimiento = _context.AlertaSeguimientos
-                              .Where(u => request.estados.Contains(u.EstadoId))
-                              .ToList();
+            List<ConsultarAlertaEstadoResponse> alertasSeguimiento = (from aseg in _context.AlertaSeguimientos
+                                                                      where request.estados.Contains(aseg.EstadoId)
+                                                                      select new ConsultarAlertaEstadoResponse()
+                                                                      {
+                                                                          AlertaId = aseg.AlertaId,
+                                                                          EstadoId = aseg.EstadoId,
+                                                                          Observaciones = aseg.Observaciones,
+                                                                          SeguimientoId = aseg.SeguimientoId,
+                                                                          UltimaFechaSeguimiento = aseg.UltimaFechaSeguimiento,
+                                                                          AlertaSeguimientoId = aseg.Id
+                                                                      }).ToList();
+
+            foreach(ConsultarAlertaEstadoResponse consultarAlertaEstadoResponse in alertasSeguimiento)
+            {
+                consultarAlertaEstadoResponse.consultarAlertaDetalles = (from notent in _context.NotificacionesEntidad
+                                                                         join ent in _context.Entidades on notent.EntidadId equals ent.Id
+                                                                         where notent.AlertaSeguimientoId == consultarAlertaEstadoResponse.AlertaSeguimientoId
+                                                                         select new ConsultarAlertaDetalleResponse()
+                                                                         {
+                                                                             Asunto = notent.Asunto,
+                                                                             EntidadId = notent.EntidadId,
+                                                                             EntidadNombre = ent.Nombre,
+                                                                             FechaEnvio = notent.FechaEnvio
+                                                                         }).ToList();
+            }
+
+
+
 
             return alertasSeguimiento;
         }

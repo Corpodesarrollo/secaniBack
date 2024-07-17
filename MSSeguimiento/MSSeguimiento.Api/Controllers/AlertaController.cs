@@ -4,6 +4,7 @@ using MSSeguimiento.Core.Modelos;
 using MSSeguimiento.Core.request;
 using MSSeguimiento.Core.Request;
 using MSSeguimiento.Core.response;
+using MSSeguimiento.Core.Response;
 using MSSeguimiento.Infra.Repositorios;
 
 namespace MSSeguimiento.Api.Controllers
@@ -38,7 +39,7 @@ namespace MSSeguimiento.Api.Controllers
         }
 
         [HttpPost("ConsultarAlertasEstados")]
-        public List<AlertaSeguimiento> ConsultarAlertaEstados(ConsultarAlertasEstadosRequest request)
+        public List<ConsultarAlertaEstadoResponse> ConsultarAlertaEstados(ConsultarAlertasEstadosRequest request)
         {
             return alertaRepo.ConsultarAlertaEstados(request);
         }
