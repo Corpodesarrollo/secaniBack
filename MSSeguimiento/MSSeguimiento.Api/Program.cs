@@ -16,6 +16,20 @@ builder.CustomConfigureServices();
 builder.Services.AddScoped<INotificacionRepo, NotificacionRepo>();
 builder.Services.AddScoped<IAlertaRepo, AlertaRepo>();
 
+builder.Services.AddCors(o => o.AddPolicy("CorsPolicy", policy =>
+{
+    policy.AllowAnyHeader()
+          .AllowAnyMethod()
+          .AllowAnyOrigin();
+}));
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowOrigin",
+        builder => builder.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader());
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
