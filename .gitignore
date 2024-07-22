@@ -155,8 +155,14 @@
 /MSSeguimiento/MSSeguimiento.Tests/obj/project.nuget.cache
 /MSSeguimiento/.vs/ProjectEvaluation/msseguimiento.metadata.v7.bin
 /MSSeguimiento/.vs/ProjectEvaluation/msseguimiento.projects.v7.bin
-=======
-
- 
-/MSNNA/.vs/MSNNA
->>>>>>> origin/main
+/MSEntidad/.vs/MSEntidad/v17/.suo
+/MSEntidad/.vs/MSEntidad/v17/DocumentLayout.json
+/MSEntidad/.vs/ProjectEvaluation/msentidad.metadata.v8.bin
+/MSEntidad/.vs/ProjectEvaluation/msentidad.projects.v8.bin
+/MSEntidad/.vs/ProjectEvaluation/msentidad.strings.v8.bin
+/MSEntidad/MSEntidad.Tests/bin/Debug/net8.0/CoverletSourceRootsMapping_MSEntidad.Tests
+/MSNNA/.vs/MSNNA/v17/.suo
+/MSNNA/.vs/MSNNA/v17/DocumentLayout.json
+/MSNNA/.vs/ProjectEvaluation/msnna.metadata.v8.bin
+/MSNNA/.vs/ProjectEvaluation/msnna.projects.v8.bin
+/MSNNA/.vs/ProjectEvaluation/msnna.strings.v8.bin
