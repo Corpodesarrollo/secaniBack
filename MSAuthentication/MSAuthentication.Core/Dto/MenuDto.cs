@@ -1,13 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace MSAuthentication.Core.Modelos
-
+namespace MSAuthentication.Core.Dto
 {
-    [Table("VwMenu")]
-    public class VwMenuModel
-    {        
+    public class MenuDto
+    {
         public long PermisoId { get; set; }
         public string RoleId { get; set; }
         public string RoleNombre { get; set; }

@@ -31,7 +31,7 @@ namespace MSAuthentication.Tests
             // Inicializar datos de prueba
             var request = new GetVwMenuRequest
             {
-                RolId = "14CDDEA5-FA06-4331-8359-036E101C5046"
+                RoleId = "14CDDEA5-FA06-4331-8359-036E101C5046"
             };
 
 
@@ -39,7 +39,7 @@ namespace MSAuthentication.Tests
 
             foreach (var item in response)
             {
-                Console.WriteLine($"{item.PermisoId} - {item.ModuloId} - {item.Menu} - {item.MenuPath} - {item.SubMenu} - {item.SubMenuPath} - {item.Rol} - {item.RolId} - {item.ModuloTipo} - {item.ModuloTipoId} - {item.MenuOrden} - {item.SubMenuOrden}");
+                Console.WriteLine($"{item.PermisoId} - {item.MenuId} - {item.MenuNombre} - {item.MenuPath} - {item.MenuIcon} ");
             }
             Console.WriteLine($"Total lista MenuXRolId_ReturnList: {response.Count()}");
             Assert.NotNull(response);

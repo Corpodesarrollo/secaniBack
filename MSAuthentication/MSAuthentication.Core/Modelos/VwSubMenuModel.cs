@@ -5,12 +5,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace MSAuthentication.Core.Modelos
 
 {
-    [Table("VwMenu")]
-    public class VwMenuModel
+    [Table("VwSubMenu")]
+    public class VwSubMenuModel
     {        
         public long PermisoId { get; set; }
-        public string RoleId { get; set; }
-        public string RoleNombre { get; set; }
+        public String RoleId { get; set; }
+        public String RoleNombre { get; set; }
         public string FuncionalidadNombre { get; set; }
         public int MenuId { get; set; }
         public string MenuNombre { get; set; }

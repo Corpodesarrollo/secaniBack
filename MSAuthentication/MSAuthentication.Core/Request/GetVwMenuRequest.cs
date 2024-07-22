@@ -8,6 +8,6 @@ namespace MSAuthentication.Core.request
 {
     public class GetVwMenuRequest
     {
-        public string RolId { get; set; }
+        public string RoleId { get; set; }
     }
 }
