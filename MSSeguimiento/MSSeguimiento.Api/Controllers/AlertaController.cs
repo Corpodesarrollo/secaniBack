@@ -12,7 +12,7 @@ namespace MSSeguimiento.Api.Controllers
     [Route("[controller]")]
     public class AlertaController : ControllerBase
     {
-        private IAlertaRepo alertaRepo;
+        private readonly IAlertaRepo alertaRepo;
 
         public AlertaController(IAlertaRepo alerta)
         {

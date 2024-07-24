@@ -26,5 +26,6 @@ namespace MSSeguimiento.Infra
         public DbSet<NotificacionEntidad> NotificacionesEntidad { get; set; }
         public DbSet<Entidad> Entidades { get; set; }
         public DbSet<NNA> NNAs { get; set; }
+        public DbSet<EmailConfiguration> EmailConfigurations { get; set; }
     }
 }

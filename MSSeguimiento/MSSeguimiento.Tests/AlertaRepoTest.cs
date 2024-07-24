@@ -14,7 +14,7 @@ namespace MSSeguimiento.Tests
 {
     public class AlertaRepoTest
     {
-        private AlertaRepo AlertaRepo;
+        private readonly AlertaRepo AlertaRepo;
         private readonly ApplicationDbContext Context;
 
         public AlertaRepoTest()
@@ -30,11 +30,11 @@ namespace MSSeguimiento.Tests
         [Fact]
         public void CrearAlerta_Exitoso()
         {
-            Context.AspNetUsers.Add(new AspNetUsers { Id = "prueba3", FullName = "Giovanny Romero", Telefonos = "",UserName= "user.externo@yopmail.com" });
+            Context.AspNetUsers.Add(new AspNetUsers { Id = "prueba1", FullName = "Giovanny Romero", Telefonos = "",UserName= "user.externo@yopmail.com" });
 
             Context.SaveChanges();
             // Inicializar datos de prueba
-            CrearAlertaSeguimientoRequest request = new CrearAlertaSeguimientoRequest()
+            CrearAlertaSeguimientoRequest request = new ()
             {
                 AlertaId = 1,
                 EstadoId = 2,
@@ -46,6 +46,61 @@ namespace MSSeguimiento.Tests
 
             Assert.NotNull(response);
             Assert.Equal("Alerta creada exitosamente", response);
+        }
+
+        [Fact]
+        public void GestionarAlerta_Exitoso()
+        {
+            Context.AspNetUsers.Add(new AspNetUsers { Id = "prueba2", FullName = "Giovanny Romero", Telefonos = "", UserName = "user.externo@yopmail.com" });
+
+            Context.SaveChanges();
+            // Inicializar datos de prueba
+            GestionarAlertaRequest request = new()
+            {
+                IdAlerta = 1,
+                IdEstado = 2,
+                IdSeguimiento = 1,
+                Observacion = "observacion",
+                UserName = "user.externo@yopmail.com"
+            };
+            string response = AlertaRepo.GestionarAlerta(request);
+
+            Assert.NotNull(response);
+            Assert.Equal("Seguimiento actualizado exitosamente", response);
+        }
+
+        [Fact]
+        public void ConsultarAlertaSeguimiento_Exitoso()
+        {
+            Context.AlertaSeguimientos.Add(new AlertaSeguimiento() { SeguimientoId=11,AlertaId =1, CreatedByUserId="",Observaciones="" });
+
+            Context.SaveChanges();
+            // Inicializar datos de prueba
+            ConsultarAlertasRequest request = new ()
+            {
+                IdSeguimiento = 11
+            };
+            List<AlertaSeguimiento> response = AlertaRepo.ConsultarAlertaSeguimiento(request);
+
+            Assert.NotNull(response);
+            Assert.Equal(2, response.Count);
+        }
+
+        [Fact]
+        public void ConsultarAlertaEstados_Exitoso()
+        {
+            Context.AlertaSeguimientos.Add(new AlertaSeguimiento() { SeguimientoId = 11, AlertaId = 1, CreatedByUserId = "", Observaciones = "",EstadoId=1 });
+
+            Context.SaveChanges();
+            // Inicializar datos de prueba
+            ConsultarAlertasEstadosRequest request = new ()
+            {
+                estados = [1]
+            };
+            List<AlertaSeguimiento> response = AlertaRepo.ConsultarAlertaEstados(request);
+
+            Assert.NotNull(response);
+            Assert.Single(response);
         }
     }
 }

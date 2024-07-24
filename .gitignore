@@ -178,3 +178,5 @@
 /MSAuthentication/MSAuthentication.Tests/obj
 /MSSeguimiento/MSSeguimiento.Api/bin/Debug/net8.0/MSSeguimiento.Api.deps.json
 /MSSeguimiento/MSSeguimiento.Core/bin/Debug/net8.0/MSSeguimiento.Core.deps.json
+/MSSeguimiento/MSSeguimiento.Api/bin/Debug/net8.0
+/MSSeguimiento/MSSeguimiento.Infra/bin/Debug/net8.0/MSSeguimiento.Infra.deps.json

@@ -3,6 +3,7 @@ using MSSeguimiento.Core.Interfaces.Repositorios;
 using MSSeguimiento.Core.request;
 using MSSeguimiento.Core.Request;
 using MSSeguimiento.Core.response;
+using MSSeguimiento.Core.Response;
 
 namespace MSSeguimiento.Api.Controllers
 {
@@ -10,7 +11,7 @@ namespace MSSeguimiento.Api.Controllers
     [Route("[controller]")]
     public class NotificacionController : ControllerBase
     {
-        private INotificacionRepo notificacionRepo;
+        private readonly INotificacionRepo notificacionRepo;
 
         public NotificacionController(INotificacionRepo notificacion)
         {
@@ -19,7 +20,7 @@ namespace MSSeguimiento.Api.Controllers
         [HttpPost("GetNotification")]
         public List<GetNotificacionResponse> GetNotifications(GetNotificacionRequest request)
         {
-            List<GetNotificacionResponse> response = new List<GetNotificacionResponse>();
+            List<GetNotificacionResponse> response;
 
             response = notificacionRepo.GetNotificacionUsuario(request.AgenteDestinoId);
 
@@ -36,6 +37,18 @@ namespace MSSeguimiento.Api.Controllers
         public string GenerarOficioNotificacion(OficioNotificacionRequest request)
         {
             return notificacionRepo.GenerarOficioNotificacion(request);
+        }
+
+        [HttpPost("EnviarOficioNotificacion")]
+        public async Task<string> EnviarOficioNotificacion(EnviarOficioNotifcacionRequest request)
+        {
+            return await notificacionRepo.EnviarOficioNotificacion(request);
+        }
+
+        [HttpPost("VerOficioNotificacion")]
+        public VerOficioNotificacionResponse VerOficioNotificacion(VerOficioNotificacionRequest request)
+        {
+            return notificacionRepo.VerOficioNotificacion(request);
         }
     }
 }
