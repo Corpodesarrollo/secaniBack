@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
+using MSNNA.Core.Dto;
 using MSNNA.Core.Interfaces.Repositorios;
 using MSNNA.Core.Modelos;
 using MSNNA.Core.Request;
@@ -18,7 +20,7 @@ namespace MSNNA.Api.Controllers
         }
 
         [HttpPost("ContactoNNACrear")]
-        public RespuestaResponse<ContactoNNA> ContactoNNACrear(ContactoNNARequest request)
+        public IActionResult ContactoNNACrear(ContactoNNARequest request)
         {
             var contactoNNA = new ContactoNNA();
             contactoNNA.Nombres = request.Nombres;
@@ -28,11 +30,11 @@ namespace MSNNA.Api.Controllers
             contactoNNA.TelefnosInactivos = request.TelefnosInactivos;
 
             var response = _nNARepo.CrearContactoNNA(contactoNNA);
-            return response; ;
+            return Ok(response); 
         }
 
         [HttpPut("ContactoNNAActualizar")]
-        public RespuestaResponse<ContactoNNA> ContactoNNAActualizar(ContactoNNARequest request)
+        public IActionResult ContactoNNAActualizar(ContactoNNARequest request)
         {
             var contactoNNA = new ContactoNNA();
             contactoNNA.Nombres= request.Nombres;
@@ -42,22 +44,22 @@ namespace MSNNA.Api.Controllers
             contactoNNA.TelefnosInactivos = request.TelefnosInactivos;
 
             var response = _nNARepo.ActualizarContactoNNA(contactoNNA);
-            return response;
+            return Ok(response);
         }
 
         [HttpGet("ContactoNNAGetById/{id}")]
-        public RespuestaResponse<ContactoNNA> ContactoNNAGetById(long id)
+        public IActionResult ContactoNNAGetById(long id)
         {
 
             var response = _nNARepo.ObtenerContactoPorId(id);
-            return response;
+            return Ok(response.Datos);
         }
 
         [HttpPost("ConsultarNNAFiltro")]
-        public RespuestaResponse<FiltroNNA> ConsultarNNAFiltro(FiltroNNARequest request)
+        public IActionResult ConsultarNNAFiltro(FiltroNNARequest request)
         {
             var response = _nNARepo.ConsultarNNAFiltro(request);
-            return response; ;
+            return Ok(response.Datos);
         }
     }
 }

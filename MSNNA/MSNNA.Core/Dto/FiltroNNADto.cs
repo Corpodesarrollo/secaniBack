@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MSNNA.Core.Modelos
+namespace MSNNA.Core.Dto
 {
-    public class FiltroNNA
+    public class FiltroNNADto
     {
         public long? NoCaso { get; set; }
         public string? NombreNNA { get; set; }
@@ -15,7 +15,7 @@ namespace MSNNA.Core.Modelos
         public string? AgenteAsignado { get; set; }
         public int? EstadoId { get; set; }
         public string? Estado { get; set; }
-		public string? EstadoDescripcion { get; set; }
+        public string? EstadoDescripcion { get; set; }
         public string? EstadoColorBG { get; set; }
         public string? EstadoColorText { get; set; }
     }

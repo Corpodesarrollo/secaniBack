@@ -8,8 +8,8 @@ namespace MSNNA.Core.Response
 {
     public class RespuestaResponse<T>
     {
-        public Boolean Estado;
-        public string Descripcion;
+        public bool? Estado;
+        public string? Descripcion;
         public List<T>? Datos;
     }
 }

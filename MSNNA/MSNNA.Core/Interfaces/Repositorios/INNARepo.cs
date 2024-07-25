@@ -1,4 +1,5 @@
-﻿using MSNNA.Core.Modelos;
+﻿using MSNNA.Core.Dto;
+using MSNNA.Core.Modelos;
 using MSNNA.Core.Request;
 using MSNNA.Core.Response;
 using System;
@@ -17,6 +18,6 @@ namespace MSNNA.Core.Interfaces.Repositorios
 
         public RespuestaResponse<ContactoNNA> ObtenerContactoPorId(long NNAId);
 
-        public RespuestaResponse<FiltroNNA> ConsultarNNAFiltro(FiltroNNARequest entrada);
+        public RespuestaResponse<FiltroNNADto> ConsultarNNAFiltro(FiltroNNARequest entrada);
     }
 }
